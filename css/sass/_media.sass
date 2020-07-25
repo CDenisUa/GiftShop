@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1200px)
+    .label
+        display: none
+    .burger
+        display: block
+        top: 20px
+        span
+            background-color: #05aecc
+    .header
+        &-nav
+            justify-items: center
+        &-undermain
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr
+            justify-items: center
+            &_register,&_sign,&_whislost,&_cart
+                padding: 50px
+                margin-top: 10px
+
+    .main
+        &-menu_link
+            display: none
+        &-middle
+            width: 100%
+            grid-template-columns: repeat(4,1fr)
+            grid-template-rows: 1fr 1fr 100px 1fr
+            grid-template-areas: "men men men men" "women women girl girl" "search search search search" "watch watch buterfly buterfly"
+            &-men
+                width: 100%
+                background-repeat: no-repeat
+                background-size: cover
+                grid-area: men
+            &-women
+                width: 100%
+                height: auto
+                background-position: 50% 0
+                background-repeat: no-repeat
+                background-size: cover
+                grid-area: women
+            &-girl
+                width: 100%
+                height: auto
+                background-position: 50% 0
+                background-repeat: no-repeat
+                background-size: cover
+                grid-area: girl
+            &-search
+                width: 100%
+                height: auto
+                background-repeat: no-repeat
+                grid-area: search
+                input
+                    
+                    &[type='text']
+                        width: 80%
+                        padding-left: 25px
+                        &::placeholder
+                            text-align: left
+            &-watch
+                width: 100%
+                height: auto
+                background-repeat: no-repeat
+                background-size: cover
+                grid-area: watch
+            &-buterfly
+                width: 100%
+                height: auto
+                background-repeat: no-repeat
+                background-size: cover
+                grid-area: buterfly
+        &-footer
+            display: flex
+            flex-direction: column
+            width: 100%
+            &-container
+                width: 100%
+                display: flex
+            &-bag, &-colle, &-clock,&-buty
+                width: 100%
+                height: 500px
+                margin-bottom: 10px
+                background-repeat: no-repeat
+                background-size: cover
+    .footer
+        &-menu
+            display: flex
+            justify-content: center
+            position: relative
+            top: 700px
+            margin-bottom: 100px
+            border: none
+    .footer
+        &-shopping,&-about, &-selling,&-designed
+            display: none
+
+        &-menu
+            width: 100%
+            height: 50px
+            grid-template-columns: 1fr
+            &_link
+                display: none
+        &-signup
+            &-social
+                justify-content: center
+            .icon
+                margin-bottom: 50px
+@media screen and (max-width: 992px)
+    .container
+        width: 90%
+        margin: 0 auto
+
+@media screen and (max-width: 768px)
+    .header-undermain_undermenu
+        grid-template-columns: 1fr 1fr
+
+@media screen and (max-width: 576px)
+    .container
+        width: 100%
+    .header
+        &-nav
+            display: none
+        &-undermain
+            display: none
+            &_logo
+                display: none
+    .main
+        &-container
+            margin: 0
+            position: fixed
+            z-index: 100
+        &-middle-search
+            input
+                &[type='text']
+                    width: 80%
+                    padding-left: 10px
+                    &::placeholder
+                        left: 20px
